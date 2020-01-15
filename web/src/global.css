@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+* {
+  /*resetando css, para tirar configurações padrão*/
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background: #000 url("./assets/background.jpg") no-repeat;
+  background-size: cover; /* cobrir toda a tela nao impota o tamanho, se adaptando */
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body,
+input,
+button {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
