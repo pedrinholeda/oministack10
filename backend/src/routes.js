@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const axios = require("axios");
+const Dev = require("./models/Dev");
 
 const routes = Router();
 
@@ -12,9 +13,17 @@ routes.post("/devs", async (request, response) => {
 
   const { name = login, avatar_url, bio } = apiResponse.data;
 
-  console.log(name, avatar_url, bio, github_username);
+  const techsArray = techs.split(",").map(tech => tech.trim());
 
-  return response.json({ mensagem: "Hey Mundo" });
+  const dev = await Dev.create({
+    github_username,
+    name,
+    avatar_url,
+    bio,
+    techs: techsArray
+  });
+
+  return response.json(dev);
 });
 
 module.exports = routes;
