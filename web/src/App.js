@@ -2,6 +2,7 @@ import React from "react";
 import "./global.css";
 import "./App.css";
 import "./Sidebar.css";
+import "./Main.css";
 /*Componente -> função que retorna algum conteudo html,
  bloco isolado de html, css e js, 
  o qual não interfere no restante da aplicação*/
@@ -45,7 +46,77 @@ function App() {
           <button type="submit">Salvar</button>
         </form>
       </aside>
-      <main></main>
+      <main>
+        <ul>
+          <li className="dev-item">
+            <header>
+              <img
+                src="https://avatars3.githubusercontent.com/u/40272724?v=4"
+                alt="Pedro Henrique"
+              />
+              <div className="user-info">
+                <strong>Pedro Henrique Léda</strong>
+                <span>Node, React,Swift</span>
+              </div>
+            </header>
+            <p>Student of Computer science and a nice guy :)</p>
+            <a href="https://github.com/pedrinholeda">
+              Acessar Perfil no GitHub
+            </a>
+          </li>
+
+          <li className="dev-item">
+            <header>
+              <img
+                src="https://avatars3.githubusercontent.com/u/40272724?v=4"
+                alt="Pedro Henrique"
+              />
+              <div className="user-info">
+                <strong>Pedro Henrique Léda</strong>
+                <span>Node, React,Swift</span>
+              </div>
+            </header>
+            <p>Student of Computer science and a nice guy :)</p>
+            <a href="https://github.com/pedrinholeda">
+              Acessar Perfil no GitHub
+            </a>
+          </li>
+
+          <li className="dev-item">
+            <header>
+              <img
+                src="https://avatars3.githubusercontent.com/u/40272724?v=4"
+                alt="Pedro Henrique"
+              />
+              <div className="user-info">
+                <strong>Pedro Henrique Léda</strong>
+                <span>Node, React,Swift</span>
+              </div>
+            </header>
+            <p>Student of Computer science and a nice guy :)</p>
+            <a href="https://github.com/pedrinholeda">
+              Acessar Perfil no GitHub
+            </a>
+          </li>
+
+          <li className="dev-item">
+            <header>
+              <img
+                src="https://avatars3.githubusercontent.com/u/40272724?v=4"
+                alt="Pedro Henrique"
+              />
+              <div className="user-info">
+                <strong>Pedro Henrique Léda</strong>
+                <span>Node, React,Swift</span>
+              </div>
+            </header>
+            <p>Student of Computer science and a nice guy :)</p>
+            <a href="https://github.com/pedrinholeda">
+              Acessar Perfil no GitHub
+            </a>
+          </li>
+        </ul>
+      </main>
     </div>
   );
 }

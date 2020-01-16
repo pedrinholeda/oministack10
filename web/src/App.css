@@ -7,3 +7,21 @@
   flex-direction: row; /* alinhado ao lado */
   align-items: flex-start; /* alinhado ao topo */
 }
+#app main {
+  margin-left: 30px;
+}
+
+/* arrumando responsividade */
+
+@media (max-width: 1000px) {
+  #app {
+    flex-direction: column;
+  }
+  #app main {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  #app aside {
+    width: 100%;
+  }
+}
