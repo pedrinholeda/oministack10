@@ -14,7 +14,7 @@ body,
 }
 
 body {
-  background: #000 url("./assets/background.jpg") no-repeat;
+  background: #000 url("./assets/background.jpg");
   background-size: cover; /* cobrir toda a tela nao impota o tamanho, se adaptando */
   /* -webkit-font-smoothing: antialiased !important; */
 }
