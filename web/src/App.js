@@ -54,7 +54,7 @@ function App() {
       <div id="conteudo">
         <aside>
           <strong>Cadastrar</strong>
-          <DevForm onSuvmit={handleAdddDev} />
+          <DevForm onSubmit={handleAdddDev} />
         </aside>
         <main>
           <ul>

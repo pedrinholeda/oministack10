@@ -25,17 +25,19 @@ function DevForm({ onSubmit }) {
   }, []);
 
   async function handleSubmit(e) {
-    e.preventDefault();
+    e.preventDefault(); //previnir evento -> redirect de página
+
     await onSubmit({
+      // submetendo dados
       github_username,
       techs,
       latitude,
       longitude
     });
+    //atualizando valores
     setGithub_username("");
     setTechs("");
   }
-
   return (
     <form onSubmit={handleSubmit}>
       <div className="input-block">
