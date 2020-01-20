@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { StyleSheet, Image } from "react-native";
-import MapView, { Marker } from "react-native-maps";
+import { StyleSheet, Image, View, Text } from "react-native";
+import MapView, { Marker, Callout } from "react-native-maps";
 import {
   requestPermissionsAsync,
   getCurrentPositionAsync
@@ -44,6 +44,15 @@ function Main() {
             uri: "https://avatars3.githubusercontent.com/u/40272724?v=4"
           }}
         />
+        <Callout>
+          <View style={styles.callout}>
+            <Text style={styles.devName}>Pedro Henrique Léda</Text>
+            <Text style={styles.devBio}>
+              Student of Computer science and a nice guy
+            </Text>
+            <Text style={styles.devTechs}>React.js, React Native, Swift</Text>
+          </View>
+        </Callout>
       </Marker>
     </MapView>
   );
@@ -59,6 +68,22 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     borderWidth: 4,
     borderColor: "#fff"
+  },
+  callout: {
+    width: 260,
+    padding: 10
+  },
+  devName: {
+    fontWeight: "bold",
+    fontSize: 16
+  },
+  devBio: {
+    color: "#666",
+    marginTop: 5
+  },
+  devTechs: {
+    marginTop: 5,
+    fontWeight: "500"
   }
 });
 
